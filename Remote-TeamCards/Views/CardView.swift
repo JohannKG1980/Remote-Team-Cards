@@ -20,7 +20,8 @@ struct CardView: View {
                         .degrees(flipped ? 0 : -90),
                         axis: (x: 0.0, y: 1.0, z: 0.0))
                     .animation(flipped ? .linear(duration: 0.3).delay(0.36) : .linear(duration: 0.3), value: flipped)
-                CardFrontView1()
+                CardFrontView1()  // Prarallax Effect by drag gesture
+                // CardFrontView2()   // Prarallax effect by Moition of the device
                     .rotation3DEffect(
                         .degrees(!flipped ? 0 : 90),
                         axis: (x: 0.0, y: 1.0, z: 0.0))
@@ -42,5 +43,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(card: CardModel(id: UUID().uuidString, image: "hero-Style", name: "Andreas H.", title: "The Inspirator"))
+    CardView(card: CardModel(id: UUID().uuidString, image: "hero-Style", name: "Office Hero", title: "The Inspirator"))
 }
