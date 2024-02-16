@@ -79,8 +79,8 @@ struct MainAppView: View {
 
                             .onTapGesture {
                                 withAnimation {
-                                    viewRouter.returnPage = viewRouter.currentPage
-                                    viewRouter.currentPage = .settings
+//                                    viewRouter.returnPage = viewRouter.currentPage
+//                                    viewRouter.currentPage = .settings
                                 }
                             }
                             .pressEvents {
